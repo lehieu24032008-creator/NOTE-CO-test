@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOTE&CO — Văn phòng phẩm cho ngày thêm gọn</title>
+    <meta name="description" content="NOTE&CO - cửa hàng văn phòng phẩm cho học tập, làm việc và sáng tạo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement"><span>Giao hàng miễn phí từ 299.000đ</span><span class="announcement__right">Đổi trả trong 7 ngày <span aria-hidden="true">·</span> Hotline 1800 6699</span></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NOTE&CO trang chủ"><span class="brand__mark">N</span><span>NOTE<span class="brand__amp">&</span>CO</span></a>
+      <div class="search-wrap">
+        <svg class="icon" aria-hidden="true"><use href="#i-search" /></svg>
+        <input id="searchInput" type="search" placeholder="Tìm bút, sổ tay, giấy in..." autocomplete="off" />
+        <button class="search-btn" id="searchBtn">Tìm kiếm</button>
+      </div>
+      <div class="header-actions">
+        <button class="header-action" id="accountBtn"><svg class="icon"><use href="#i-user" /></svg><span>Tài khoản</span></button>
+        <button class="header-action cart-trigger" id="cartBtn"><span class="cart-icon"><svg class="icon"><use href="#i-bag" /></svg><b id="cartCount">0</b></span><span>Giỏ hàng</span></button>
+      </div>
+    </header>
+    <nav class="nav-bar" aria-label="Điều hướng chính">
+      <button class="category-trigger" id="categoryBtn"><svg class="icon"><use href="#i-menu" /></svg> Danh mục sản phẩm <svg class="icon category-chevron"><use href="#i-chevron" /></svg></button>
+      <div class="nav-links"><a href="#products">Sản phẩm mới</a><a href="#deals">Ưu đãi hôm nay</a><a href="#combo">Combo tiết kiệm</a><a href="#about">Về NOTE&CO</a></div>
+      <div class="nav-benefit"><svg class="icon"><use href="#i-shield" /></svg> Mua sắm an tâm</div>
+    </nav>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">BACK TO SCHOOL / 2026</p>
+          <h1>Mỗi ý tưởng<br /><em>bắt đầu từ đây.</em></h1>
+          <p class="hero-text">Văn phòng phẩm được chọn kỹ cho những ngày học tập, làm việc và sáng tạo hiệu quả hơn.</p>
+          <div class="hero-actions"><a class="btn btn--dark" href="#products">Khám phá sản phẩm <svg class="icon"><use href="#i-arrow" /></svg></a><button class="text-link" id="playBtn"><span class="play">▶</span> Xem bộ sưu tập</button></div>
+          <div class="hero-proof"><div class="avatars"><span>H</span><span>M</span><span>T</span><span>+</span></div><span>Được yêu thích bởi <strong>12.000+</strong> khách hàng</span></div>
+        </div>
+        <div class="hero-art" aria-label="Bộ sản phẩm nổi bật">
+          <div class="arch arch--back"></div><div class="arch arch--front"></div>
+          <div class="hero-label hero-label--top">PAPER<br /><strong>GOODS</strong></div>
+          <div class="hero-label hero-label--bottom">selected<br />with care</div>
+          <div class="hero-object notebook"><div class="notebook-lines"></div><span>notes<br /><b>&</b><br />ideas</span></div>
+          <div class="hero-object pencil-cup"><i></i><i></i><i></i><i></i></div>
+          <div class="hero-object pen pen--one"></div><div class="hero-object pen pen--two"></div>
+          <div class="hero-object clip"><span></span></div>
+          <div class="spark spark--one">✳</div><div class="spark spark--two">✦</div>
+        </div>
+      </section>
+
+      <section class="category-strip container" aria-label="Danh mục sản phẩm">
+        <div class="section-heading"><div><p class="eyebrow">MUA SẮM THEO NHU CẦU</p><h2>Tìm đúng món bạn cần</h2></div><a class="under-link" href="#products">Xem tất cả <svg class="icon"><use href="#i-arrow" /></svg></a></div>
+        <div class="category-grid">
+          <button class="category-card cat-blue" data-category="Bút viết"><span class="cat-visual cat-pen"></span><span><strong>Bút viết</strong><small>24 sản phẩm</small></span><svg class="icon"><use href="#i-arrow-up" /></svg></button>
+          <button class="category-card cat-yellow" data-category="Giấy & sổ"><span class="cat-visual cat-notebook"></span><span><strong>Giấy & sổ</strong><small>18 sản phẩm</small></span><svg class="icon"><use href="#i-arrow-up" /></svg></button>
+          <button class="category-card cat-lilac" data-category="Dụng cụ học tập"><span class="cat-visual cat-ruler"></span><span><strong>Dụng cụ học tập</strong><small>32 sản phẩm</small></span><svg class="icon"><use href="#i-arrow-up" /></svg></button>
+          <button class="category-card cat-peach" data-category="Dụng cụ văn phòng"><span class="cat-visual cat-clip"></span><span><strong>Đồ dùng văn phòng</strong><small>16 sản phẩm</small></span><svg class="icon"><use href="#i-arrow-up" /></svg></button>
+          <button class="category-card cat-mint" data-category="Mỹ thuật"><span class="cat-visual cat-brush"></span><span><strong>Mỹ thuật</strong><small>20 sản phẩm</small></span><svg class="icon"><use href="#i-arrow-up" /></svg></button>
+        </div>
+      </section>
+
+      <section class="product-section container" id="products">
+        <div class="section-heading products-heading"><div><p class="eyebrow">GỢI Ý CHO BẠN</p><h2>Những món đang được chọn</h2></div><div class="product-controls"><label class="select-wrap">Sắp xếp <select id="sortSelect"><option value="featured">Nổi bật nhất</option><option value="priceAsc">Giá thấp đến cao</option><option value="priceDesc">Giá cao đến thấp</option></select><svg class="icon"><use href="#i-chevron" /></svg></label></div></div>
+        <div class="filter-row"><button class="filter-chip is-active" data-filter="Tất cả">Tất cả</button><button class="filter-chip" data-filter="Bút viết">Bút viết</button><button class="filter-chip" data-filter="Giấy & sổ">Giấy & sổ</button><button class="filter-chip" data-filter="Dụng cụ học tập">Dụng cụ học tập</button><button class="filter-chip" data-filter="Dụng cụ văn phòng">Văn phòng</button><button class="filter-chip" data-filter="Mỹ thuật">Mỹ thuật</button></div>
+        <div class="products-grid" id="productsGrid"></div>
+        <div class="empty-state" id="emptyState"><svg class="icon icon--large"><use href="#i-search" /></svg><h3>Chưa tìm thấy sản phẩm</h3><p>Thử tìm với từ khóa khác hoặc xem toàn bộ sản phẩm nhé.</p><button class="btn btn--outline" id="clearSearch">Xem tất cả</button></div>
+      </section>
+
+      <section class="feature-banner container" id="combo"><div><p class="eyebrow">MUA NHIỀU, TIẾT KIỆM NHIỀU</p><h2>Gom đủ cảm hứng<br /><em>cho một học kỳ mới.</em></h2><p>Combo được gợi ý sẵn, giá tốt hơn đến 20%.</p><a class="btn btn--dark" href="#products">Xem combo</a></div><div class="stack-art"><div class="stack-sheet sheet-one"></div><div class="stack-sheet sheet-two"></div><div class="stack-sheet sheet-three">NOTE<br /><span>YOUR<br />DAY</span></div><span class="stack-star">✳</span></div></section>
+      <section class="trust-section" id="about"><div class="container trust-grid"><div><p class="eyebrow">NOTE&CO PROMISE</p><h2>Nhỏ gọn trong tay,<br /><em>lớn hơn mỗi ngày.</em></h2></div><div class="trust-items"><div><span class="trust-icon"><svg class="icon"><use href="#i-truck" /></svg></span><strong>Giao nhanh 2h</strong><p>Nội thành TP.HCM<br />từ 30.000đ</p></div><div><span class="trust-icon"><svg class="icon"><use href="#i-check" /></svg></span><strong>Chọn kỹ từng món</strong><p>Sản phẩm chính hãng<br />và rõ nguồn gốc</p></div><div><span class="trust-icon"><svg class="icon"><use href="#i-heart" /></svg></span><strong>Đổi trả dễ dàng</strong><p>Trong vòng 7 ngày<br />nếu chưa vừa ý</p></div></div></div></section>
+    </main>
+    <footer class="footer"><div class="container footer-grid"><div><a class="brand brand--footer" href="#top"><span class="brand__mark">N</span><span>NOTE<span class="brand__amp">&</span>CO</span></a><p>Văn phòng phẩm cho một ngày<br />được sắp xếp thật đẹp.</p></div><div><strong>Khám phá</strong><a href="#products">Sản phẩm mới</a><a href="#products">Bút viết</a><a href="#combo">Combo tiết kiệm</a></div><div><strong>Hỗ trợ</strong><a href="#">Trung tâm trợ giúp</a><a href="#">Chính sách đổi trả</a><a href="#">Liên hệ với chúng tôi</a></div><div><strong>Đăng ký nhận tin</strong><p>Nhận ưu đãi và cảm hứng mới mỗi tuần.</p><div class="newsletter"><input placeholder="Email của bạn" type="email" /><button aria-label="Đăng ký"><svg class="icon"><use href="#i-arrow" /></svg></button></div></div></div><div class="container footer-bottom"><span>© 2026 NOTE&CO. Demo project.</span><span>Made for better everyday notes.</span></div></footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Giỏ hàng"><div class="drawer-head"><div><p class="eyebrow">NOTE&CO CART</p><h2>Giỏ hàng <span id="drawerCount">0</span></h2></div><button class="close-btn" id="closeCart" aria-label="Đóng giỏ hàng"><svg class="icon"><use href="#i-close" /></svg></button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span class="cart-empty-icon"><svg class="icon"><use href="#i-bag" /></svg></span><h3>Giỏ hàng đang trống</h3><p>Thêm vài món nhỏ để bắt đầu nhé.</p><button class="btn btn--dark" id="shopNow">Mua sắm ngay</button></div><div class="cart-summary" id="cartSummary"><div><span>Tạm tính</span><strong id="subtotal">0đ</strong></div><p>Phí vận chuyển sẽ được tính ở bước thanh toán.</p><button class="btn btn--dark btn--full" id="checkoutBtn">Tiến hành đặt hàng <svg class="icon"><use href="#i-arrow" /></svg></button></div></aside><div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="toast" id="toast" role="status"><span class="toast-check"><svg class="icon"><use href="#i-check" /></svg></span><span id="toastText">Đã thêm vào giỏ hàng</span></div>
+    <div class="quick-view" id="quickView" role="dialog" aria-modal="true" aria-label="Chi tiết sản phẩm"><div class="quick-view__inner"><button class="close-btn quick-close" id="closeQuick" aria-label="Đóng chi tiết"><svg class="icon"><use href="#i-close" /></svg></button><div class="quick-image" id="quickImage"></div><div class="quick-copy"><p class="eyebrow" id="quickBrand"></p><h2 id="quickName"></h2><div class="quick-rating">★★★★★ <span>4.9 · 86 đánh giá</span></div><p class="quick-price" id="quickPrice"></p><p class="quick-description">Một lựa chọn gọn gàng cho bàn học và góc làm việc. Thiết kế tiện dụng, màu sắc dễ phối và phù hợp để dùng mỗi ngày.</p><div class="quick-spec"><span>Quy cách</span><strong id="quickUnit"></strong></div><button class="btn btn--dark btn--full" id="quickAdd">Thêm vào giỏ hàng <svg class="icon"><use href="#i-bag" /></svg></button></div></div></div><div class="quick-overlay" id="quickOverlay"></div>
+
+    <svg class="svg-sprite" aria-hidden="true"><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 20c.5-3.5 2.6-5.3 6.5-5.3s6 1.8 6.5 5.3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol><symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8.5h14l-1 11H6l-1-11Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 9 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.2c0 4.5-2.8 7.7-7 9.3-4.2-1.6-7-4.8-7-9.3V6l7-2.5Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 8.7c0 5.2-8 10-8 10s-8-4.8-8-10A4.3 4.3 0 0 1 12 6a4.3 4.3 0 0 1 8 2.7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol><symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7zM7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM18 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol></svg>
+    <script src="script.js"></script>
+  </body>
+</html>
